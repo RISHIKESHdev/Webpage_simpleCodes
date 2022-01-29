@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TipCalc</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" />
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <h1>Tip Calculator</h1>
+        </header>
+        <label for="billAmount">Bill Amount</label>
+        <input type="text" id="billAmount" />
+        <button id="btn15">15%</button>
+        <button id="btn175">17.5%</button>
+        <button id="btn20">20%</button>
+        <input type="text" placeholder="Custom Tip Amount %" id="customTip" />
+        <button id="btncalculate">Calculate</button>
+        <h4>Result</h4>
+        <p>Tip amount:<output id="tipAmount"></output><br /></p>
+        <p>Total:<output id="total"></output></p>
+        <footer>
+            <p>Copyright RISHIsquad</p>
+        </footer>
+    </div>
+    <script src="tip_calculator.js"></script>
+</body>
+
+</html>

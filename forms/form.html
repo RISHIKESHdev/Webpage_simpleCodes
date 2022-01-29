@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM-test</title>
+</head>
+<body>
+    <h1>about you</h1>
+    <form id="questions" method="post" action="">
+    <!-- <input> <select> <textarea> -->
+    <!-- The for="" attribute tells the screenreader which label goes with which input -->
+    <!-- The optgroup element adds category labels to the list of options. -->
+    <!-- FORM ATTRIBUTE:
+        type
+        name
+        for
+        value
+        checked
+        multiple
+        placeholder
+        min
+        max
+        step
+        maxlength
+        pattern regular expression
+        required
+        aria-required="true" tells to screen reader
+        disabled
+        readonly
+        hidden -->
+    <!-- https=>https encrypted
+    http=>http   not encrypted        action attribute
+    http=>https  encrypted          in form
+    https=>http  not encrypted -->
+    <!-- method attribute in form:
+    GET: the browser sends an http request to ask
+         for a resource with an empty body in the request
+    POST: the browser sends an https request to ask for a
+          response with the data in the body of the request -->
+    <!-- Inline validation with CSS:
+     :valid
+     :invalid -->
+    <label for="name">Whats your name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">Whats your email</label>
+    <input type="email" name="email" id="email" multiple>
+    <br>
+    <label for="website">Whats your website</label>
+    <input type="url" name="website" id="website">
+    <br>
+    <label for="number">Whats your number</label>
+    <input type="number" name="number" id="number" min="1" max="10" step="2">
+    <br>
+    <label for="birthday">Whats your birthday</label>
+    <input type="date" name="birthday" id="birthday" min="2017-01-01" max="2017-12-01">
+    <br>
+    <label for="time">Whats your time</label>
+    <input type="time" name="time" id="time" step="1800">
+    <br>
+    <label for="telphone">Whats your telphone</label>
+    <input type="tel" name="telphone" id="telphone">
+    <br>
+    <fieldset>
+        <legend>Whats your favcolor:</legend>
+        <input type="radio" name="favcolor" id="blue" value="blue" checked>
+        <label for="blue">blue</label>
+        <br>
+        <input type="radio" name="favcolor" id="red" value="red">
+        <label for="red">red</label>
+        <br>
+        <input type="radio" name="favcolor" id="green" value="green">
+        <label for="green">green</label>
+        <br>
+        <input type="radio" name="favcolor" id="yellow" value="yellow">
+        <label for="yellow">yellow</label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Whats your favcolor:</legend>
+        <input type="checkbox" name="favcolor" id="blue" value="blue" checked>
+        <label for="blue">blue</label>
+        <br>
+        <input type="checkbox" name="favcolor" id="red" value="red">
+        <label for="red">red</label>
+        <br>
+        <input type="checkbox" name="favcolor" id="green" value="green">
+        <label for="green">green</label>
+        <br>
+        <input type="checkbox" name="favcolor" id="yellow" value="yellow">
+        <label for="yellow">yellow</label>
+        <br>
+    </fieldset>
+    <label for="color">what's your color</label>
+    <br>
+    <select name="color" id="color">
+        <optgroup label="like">
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+        </optgroup>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+    <br>
+    <label for="color">what's your multiple color</label>
+    <br>
+    <select name="color" id="color" multiple size="2">
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+    <br>
+    <label for="poem">Write a poem</label>
+    <br>
+    <textarea id="poem" name="poem"></textarea>
+    <br>
+    <label for="color">color</label>
+    <input type="color" name="color" id="color">
+    <br>
+    <label for="resume">upload your resume</label>
+    <input type="file" name="resume" id="resume" accept="image/*">
+    <br>
+    <label for="password">password</label>
+    <input type="password" name="password" id="password">
+    <br>
+    <input type="hidden" value="1234" name="tracking">
+    <input type="range" min="0" max="10" step="2">
+    <br>
+    <label for="search">search</label>
+    <input type="search" name="search" id="search">
+    <br>
+    <input type="submit" value="submit_button">
+    <input type="reset" value="reset">
+    <input type="button" value="simple_button">
+    <input type="image" src="" alt="alttext" width="" height="">
+    </form>
+</body>
+</html>

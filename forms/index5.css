@@ -1,0 +1,29 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input[type="checkbox"]{
+	opacity:0;
+	width:0;
+	margin:0;
+}
+input[type="checkbox"]+label{
+	border:2px solid #138d75;
+	background-color: #e9f7ef;
+	padding:4px 10px;
+	border-radius: 7px;
+	display: inline-block;
+	width: 4em;
+	text-align: center;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked+label{
+	border-color: #a93226;
+	background-color:#f5cba7;
+	font-weight: bold;
+
+}

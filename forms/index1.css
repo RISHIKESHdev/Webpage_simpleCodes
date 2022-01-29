@@ -1,0 +1,22 @@
+button,input,select,textarea{
+    font-family:inherit;
+    font-size:100%;
+}
+/* input[type="file"]{
+    font-size:3em;
+    color:red;
+}
+label{
+    color:blue;
+    font-weight:bold;
+}
+-------------------JSON sibling-----------------
+input[type="date"]+label{
+    color:orange;
+} */
+fieldset{
+    color:orange;
+}
+legend{
+    color:green;
+}
